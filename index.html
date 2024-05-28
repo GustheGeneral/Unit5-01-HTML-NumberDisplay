@@ -1,9 +1,42 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Title</title>
-  </head>
-  <body>
-    <p>Paragraph</p>
-  </body>
+
+<head>
+  <!--Meta data section-->
+  <meta charset="utf-8">
+  <meta name="description" content="Grand Escape Game">
+  <meta name="author" content="Gustav I.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Number Display</title>
+  <!--Stylesheet-->
+  <link rel="stylesheet" href="./css/style.css">
+  <!--favicon-->
+  <link rel="apple-touch-icon" sizes="180x180" href="./favicon_io/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicon_io/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./favicon_io/favicon-16x16.png">
+  <link rel="manifest" href="./favicon_io/site.webmanifest">
+</head>
+
+<body>
+  <!--Header-->
+  <h1>Number Display</h1>
+  <div>
+  <!--Input-->
+    <label for="minNumber">Min Number:</label>
+    <input type="number" id="minNumber" name="minNumber">
+  </div>
+  <div>
+  <!--Input-->
+    <label for="maxNumber">Max Number:</label>
+    <input type="number" id="maxNumber" name="maxNumber">
+  </div>
+  <!--Function-->
+  <button onclick="displayNumbers()">Submit</button>
+  <div id="numberDisplay"></div>
+  <!--Image-->
+  <img src="./images/number1.png" alt="number" width="300" height="200">
+
+  <script src="./js/script.js"></script>
+</body>
+
 </html>
